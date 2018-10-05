@@ -21,7 +21,7 @@
         android:id="@+id/textViewRelative"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageView">
+        android:layout_below="@+id/imageView">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,8 +30,8 @@
             android:id="@+id/title_textView"/>
 
         <TextView
-            android:layout_below="@id/title_textView"
-            android:layout_width="wrap_content"
+            android:layout_below="@+id/title_textView"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Location"
             android:textSize="24sp"
@@ -44,14 +44,14 @@
             android:text="9AM"
             android:textSize="18sp"
             android:layout_alignParentRight="true"
-            android:layout_below="@id/title_textView"/>
+            android:layout_below="@+id/title_textView"/>
 
     </RelativeLayout>
 
     <ScrollView
         android:paddingTop="40dp"
         android:scrollbars="vertical"
-        android:layout_below="@id/textViewRelative"
+        android:layout_below="@+id/textViewRelative"
         android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
