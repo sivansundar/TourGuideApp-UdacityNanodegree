@@ -1,141 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="match_parent">
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:padding="20dp"
-
         android:layout_height="match_parent">
 
-        // Places Card
-        <android.support.v7.widget.CardView
-            android:id="@+id/card_places"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="10dp"
-            app:cardBackgroundColor="@color/colorPrimary">
+        <LinearLayout
 
-            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/first_section"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
 
-                <TextView
-                    android:id="@+id/text_placescard_heading"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Places"
-                    android:textColor="#fff"
-                    android:paddingLeft="10dp"
-                    android:paddingBottom="20dp"
-                    android:textSize="24sp"
-                    android:layout_alignParentBottom="true"/>
-            </RelativeLayout>
+                // Places Card
 
-        </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_places"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp">
 
-        // Food card
-        <android.support.v7.widget.CardView
-            android:layout_width="150dp"
-            android:id="@+id/cards_food"
-            android:layout_height="150dp"
-            android:layout_marginLeft="40dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="10dp"
-            app:cardBackgroundColor="@color/colorPrimary"
-            android:layout_toRightOf="@id/card_places">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-            <RelativeLayout
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/round_place_white_48" />
+
+                        <TextView
+                            android:id="@+id/text_placescard_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="0dp"
+                            android:gravity="center"
+                            android:paddingBottom="20dp"
+                            android:text="Places"
+                            android:textColor="#fff"
+                            android:textSize="24sp" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                // Food card
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cards_food"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toRightOf="@+id/card_places"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/round_fastfood_white_48" />
+
+
+                        <TextView
+                            android:id="@+id/text_foodcard_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:paddingBottom="20dp"
+                            android:text="Food"
+                            android:textColor="#fff"
+                            android:textSize="24sp" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/second_section"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="20dp">
 
-                <TextView
-                    android:id="@+id/text_foodcard_heading"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Food"
-                    android:textColor="#fff"
-                    android:paddingLeft="10dp"
-                    android:paddingBottom="20dp"
-                    android:textSize="24sp"
-                    android:layout_alignParentBottom="true"/>
-            </RelativeLayout>
+                // Events Card
 
-        </android.support.v7.widget.CardView>
-        // Events Card
-
-        <android.support.v7.widget.CardView
-            android:id="@+id/card_events"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_below="@id/card_places"
-            android:layout_marginTop="20dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="10dp"
-            app:cardBackgroundColor="@color/colorPrimary">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_events"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/card_places"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp">
 
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/text_eventsscard_heading"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Events"
-                    android:textColor="#fff"
-                    android:paddingLeft="10dp"
-                    android:paddingBottom="20dp"
-                    android:textSize="24sp"
-                    android:layout_alignParentBottom="true"/>
-            </RelativeLayout>
-
-        </android.support.v7.widget.CardView>
-        //
-        <android.support.v7.widget.CardView
-            android:layout_width="150dp"
-            android:id="@+id/card_na"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="10dp"
-            android:layout_height="150dp"
-            android:layout_toRightOf="@id/card_events"
-            android:layout_below="@id/cards_food"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="40dp"
-            app:cardBackgroundColor="@color/colorPrimary">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/round_event_white_48" />
 
-                <TextView
 
-                    android:id="@+id/text_clothing_heading"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Clothing"
-                    android:textColor="#fff"
-                    android:paddingLeft="10dp"
-                    android:paddingBottom="20dp"
-                    android:textSize="24sp"
-                    android:layout_alignParentBottom="true"/>
-            </RelativeLayout>
+                        <TextView
+                            android:id="@+id/text_eventsscard_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="0dp"
+                            android:gravity="center"
+                            android:paddingBottom="20dp"
+                            android:text="Events"
+                            android:textColor="#fff"
+                            android:textSize="24sp" />
+                    </RelativeLayout>
 
-        </android.support.v7.widget.CardView>
-    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                //
 
-</LinearLayout>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_clothing"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/cards_food"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/card_events"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/round_hotel_white_48" />
+
+
+                        <TextView
+
+                            android:id="@+id/text_clothing_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:paddingBottom="20dp"
+                            android:text="Stays"
+                            android:textColor="#fff"
+                            android:textSize="24sp" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
 
 </RelativeLayout>

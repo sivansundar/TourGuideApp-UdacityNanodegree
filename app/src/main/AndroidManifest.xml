@@ -26,8 +26,8 @@
             android:name=".EventsActivity"
             android:label="Events" />
         <activity android:name=".ContentActivity" />
-        <activity android:name=".Stay" />
-        <activity android:name=".StayActivity"></activity>
+        <activity android:name=".StayActivity"
+            android:label="Stays"></activity>
     </application>
 
 </manifest>

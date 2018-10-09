@@ -1,3 +1,75 @@
 <resources>
+    // String resources for the PlacesActivity
+
     <string name="app_name">TourGuideApp</string>
+    <string name="marina_text">Marina Beach is a natural urban beach in Chennai, Tamil Nadu, India, along the Bay of Bengal. The beach runs from near Fort St. George in the north to Foreshore Estate in the south, a distance of 6.0 km (3.7 mi), making it the longest natural urban beach in the country. " 
+                "\nThe Marina is primarily sandy, unlike the short, rocky formations that make up the Juhu Beach in Mumbai. The average width of the beach is 300 m (980 ft) and the width at the widest stretch is 437 m (1,434 ft). Bathing and swimming at the Marina Beach are legally prohibited because of the dangers, as the undercurrent is very turbulent. "
+                "\nIt is one of the most crowded beaches in the country and attracts about 30,000 visitors a day during weekdays and 50,000 visitors a day during the weekends and on holidays.During summer months, about 15,000 to 20,000 people visit the beach daily.</string>
+
+    <string name="valluvarkottam_text">"Valluvar Kottam is a popular monument in Chennai, dedicated to the classical Tamil poet, philosopher, and saint, Thiruvalluvar. It is located at the intersection of the Kodambakkam High road and the Village road. The monument now stands at what was once the deepest point of a local lake.\n" 
+                "\nValluvar Kottam was constructed by Kalaignar M.Karunanidhi during 1970s in the memory of Thiruvalluvar, who wrote his famous Thirukkural some 2,000 years ago. All 133 chapters and 1330 verses of the Thirukkural are inscribed on bas-relief in the front-hall's corridors.\n"
+                "\nThe construction of Valluvar Kottam is similar to a temple chariot, like a replica of the temple chariot in Thiruvarur. A life-size statue of Thiruvalluvar has been installed in the 39-m-high chariot.\n"
+                "\nThe auditorium of Valluvar Kottam can accommodate around 4,000 people.\n"
+                "\nThe architect of the memorial is South Indian traditional architect V. Ganapati Sthapati, who is also the architect of the Thiruvalluvar Statue at Kanyakumari."</string>
+
+    <string name="kapaleeshwarar_text">"Kapaleeshwarar Temple is a Hindu temple dedicated to Shiva located in Mylapore, Chennai in the Indian state of Tamil Nadu. " 
+                "\nThe form of Shiva's consort Parvati worshipped at this temple is called Karpagambal is from Tamil. The temple was built around the 7th century CE in Dravidian architecture. \n\nThe temple's name is derived from the words kapalam (head) and eeshwarar an alias of lord Shiva. According to the Puranas, during the meeting of Brahma and Shiva at top of Mount Kailash Brahma failed to show the due respect to Shiva. Due to this, Shiva plucked of one of Brahma's heads (kapalams). In an act of penance, Brahma came down to the site of Mylapore and installed a Lingam to please Shiva. This place is known as Sukra Puri, Veda Puri, among many other names including "Kailaye Mayilai and Mayilaye Kayilai "which means this place is equal to kailash. Goddess Karpagambal, a form of Shiva's consort Parvati, due to a curse became a pea-hen and did penance here to get back her original personality. Shiva's son Murugan received the spear (Sakthi Vel) for the destruction of a demon from Parvati here. Brahma had worshipped here to get rid of his ego and get back his power to create. The four Vedas have worshipped here. Sukracharya worshipped the Lord here and got back his lost eye. Rama has worshipped here and won the war against Ravana and brought back Sita from Lanka. The daughter of Sivanesa Chettiar Angam Poompavai got her lost life due to snake bite was later resurrected here by the powers of Thirugnana Sambandar."</string>
+
+    <string name="govtmuseum_text">"The Government Museum or Madras Museum is a museum of human history and culture located in the neighbourhood of Egmore in Chennai, India. " 
+                "\n"Started in 1851, it is the second oldest museum in India after the Indian Museum in Kolkata. It is particularly rich in archaeological and numismatic collections."</string>
+
+
+    //String Resources for the EventsActivity
+
+    <string name="bloodchutney_text">"Karthik Kumar's Blood Chutney is a Standup Comedy special about hypocrisy, shaming, guilt, quitting and such inevitable, tragic yet fun(ny) life events." 
+        "\n \nQuoting KK - What was my blood will flow like chutney – main course comedy, side dish blood”, he uses all his life’s ups and downs and carefully curates them into hilarious jokes making even the most awkward instances into the funniest ones. He successfully manages to take every possible embarrassing thing that has ever happened to him and make you laugh till your jaws hurt."
+         "\n \n \nThe show begins at 7PM @ The Madras Music Academy, Royapettah, Chennai"</string>
+
+    <string name="orutimepakalam_text">An hour of Tamil stand up comedy on our infamous pop culture with a lot of stories, music, action and crowd interactions packaged into one complete show. Mervyn with his very funny, spontaneous wit and Jagan with his musical observations and original songs will guarantee you the heavy dose of humor that you need to end your weekend on a high! </string>
+
+    <string name="seanroldanlive_text">"The composer, singer, lyricist - Sean Roldan will be performing his super hit film numbers combined with his popular independent tunes. A concert that Chennai people wouldn't wanna miss!" 
+        "\n \n> Seats is available to ticket holders on the first serve basis only.\n \n>Entry on one pass is valid for one person only.\n \n>Entry will start from 6:00 pm onwards and the gate will be closed by 6:30 pm.\n \n>The right of admission reserved with the organisers.\n \n>The organisers reserve the right to frisk the ticket holder at entry points for security reasons.\n \n>No food and beverages from outside are permitted.\n \n>The organisers do not take any responsibility for the loss or theft of any personal belongings.\n \n>The event is subject to force majeure conditions.\n \n>The consumption of any banned substance is strictly prohibited including cigarettes\n \n>Potentially dangerous objects like a matchbox, lighter, aerosol liquid, sharp objects, firearms or replica of fire are not allowed."</string>
+
+    <string name="octiviaAgam_text">"Octavia is an inter-hall and inter-collegiate music fest hosted by the Bishop Heber Hall of Madras Christian College. The fest was started in the year 1981. Since then, Octavia has been Chennai's most-awaited music fest happening annually. The fest concludes with an electrifying performance from Agam which you cannot afford to miss. So, what are you waiting for? Book your tickets right away!
+    </string>
+
+    // String Resources for FoodActivity
+
+    <string name="rayarmess_text">"Tucked in a small lane in Mylapore, this 12 seater eatery is run by 4th generation owners. Kabaleeshwar Temple and Rayar's Mess is one of my favorite routines that I wish to have for a long long time.\n" 
+                "\nThey are open for just 3 hrs in the morning and evening, has a very limited menu and a crammed eating space - Rayar's Mess is an unassuming, honest and endearing place serving simple food.\n"
+                "\nThe place has it's loyal customers - customers who are willing to wait 20-30 mins for a seat despite knowing you are only going to have to choose between idli, vada and pongal every single day. No frills, no confusion, not too many things on the menu, you go there to get fed some simple tasty food."));
+</string>
+
+    <string name="borderparotta_text">"The story of the border parotta is intertwined with the story of a road that winds between Punnaloor in Kerala and Shenkottai in Tamil Nadu. As this road snakes down the Western Ghats, one of the first villages it reaches on the Tamil Nadu side is Piranoor. " 
+                "\nTill 1956, there was a toll gate in the village, signifying the border between Tamil Nadu and Kerala, and the place soon came to be known (and is still referred to) as just “Border”. It became a trading post between the two states and a pit stop for lorry crew and busloads of travellers, and a number of parotta stalls started proliferating in the area. "
+                "\nYears later, when Courtallam, which is just three km away, became a popular tourist destination, more people flocked to “Border” as well. But among a host of stalls, one that had visitors throughout the year was Rahmath Parotta Kadai. That small stall, in the last 45 years, has gone on to become a tourist attraction by itself."));
+</string>
+
+    <string name="azizatho_text">"Abdul Aziz athos's Stall is a small cart serving delicious Burmese Noodles and Egg soup it is located opposite to Dass Camera Centre, George Town.
+                "\n \nServing the best Atho in the entire lane, the stall remains crowded throughout the day. Burmese salads, transliterated as a thoke, thohk or thouk, are part of Burmese cuisine. The salads include rice, noodle, potato, ginger, tomato, kaffir lime, long bean, lahpet (pickled tea leaves), and ngapi (fish paste) salads. They are popular as fast foods in Burmese cities. "
+                "\nBurmese noodle salads include wheat noodles or rice noodles. Fermented tea leaf and pickled ginger are two classic dishes"</string>
+
+    <string name="ponnusamy_text">"An absolute heaven for non-vegetarians, Ponnusamy Hotel is known for dishing out meaty treat for its guests. More than six decades in the business, it offers dishes that are cooked to perfection. Guests can choose from an extensive menu of Indian, Chettinad, Chinese and Tandoori delicacies. Those tired of the usual stuff can try unique dishes like brain fry, pigeon fry and rabbit roast. " 
+                "\n\nVeggies may not be disappointed, as there are few special dishes for them as well."</string>
+
+
+    // String resources for StayActivity
+
+    <string name="hotelaccord_text">"Accord Metropolitan is a five-star hotel in Chennai, India. Located on G.N. Chetty Road in T.Nagar, the hotel was initially opened as Trader's Hotel. The hotel was built at a cost of ₹ 1,000 million"
+         "\n\nThe hotel is 13 stories high and has 162 rooms, including a presidential suite, three studio apartments, six deluxe suites and nine Accord club rooms. The rooms have a minimum size of 30 sq m. The four dining and entertainment facilities at the hotel include sorajima (Japanese restaurant) Royal Indiana, a contemporary Indian restaurant (opened in November 2011); Zodiac, the hotel bar; and Pergola, a rooftop restaurant at the 15th level. The hotel has three banquet halls, named Crystal, Emerald and Sapphire, to accommodate up to 1,000 guests. "
+                "\n\nThe hotel has a 516-sq-m grand ballroom which can be divided into two rooms, as well as other banquet halls with a total space of 450 sq m. Design elements include grand stairways, Italian marble, and intricate gold leaf work."</string>
+
+    <string name="meredian_text">"\n" 
+                "Le Royal Méridien Chennai is a five-star luxury hotel located at the Guindy-Kathipara Junction on Anna Salai, Chennai, India. " 
+                "Initially built as Madras Hilton at an investment of ₹ 1,650 million, the hotel was, however, opened as Le Royal Meridien Chennai."
+         "\n \nThe hotel was developed by the PGP Group with a management contract with Hilton. However, the contract ended in March 2000 and the group signed a contract with Le Meridien Hotels and Resorts and the hotel came under the brand \"Le Royal Meridien Chennai\". "
+                "The hotel was soft launched on 12 April 2000, with commercial opening on 30 December 2000 when it was formally inaugurated by the then chief minister of Tamil Nadu, M. Karunanidhi."</string>
+
+    <string name="raintree_text">"The hotel was opened in July 2010. In August 2013, the hotel joined Summit Hotels and Resorts, a brand of the Preferred Hotel Group, which included the hotel in its Asia Pacific portfolio." 
+                "The hotel has a total of 230 rooms. The rooms are divided into 154 deluxe rooms, 8 premium rooms, 51club rooms, 4 studio rooms, 12 executive suites and 1 presidential suite. The restaurants at the hotel include Kitchen, a multi-cuisine restaurant, Madras, a South Indian delicacies restaurant, Madera, a lounge bar, Up North, the roof-top Punjabi restaurant and High Bar. There are three banquet halls and three conference venues which totals to 12,000 square feet (1,100 m2) of banqueting space. The hotel also has a roof-top pool along with a health club and spa."</string>
+
+
+    <string name="residencytowers_text">"Upon acquiring a land measuring 26 grounds from the Russian consulate, Sood and Sood joined with Appaswamy Group on joint development of commercial complexes. However, they subsequently chose to build a four-star hotel instead."
+         "\nBuilt on a land measuring 26 grounds, the hotel has 16 floors with 176 rooms, 11 theme-based suites, theme restaurants, convention halls and car parking facilities (two basement floors) for around 180 to 200 cars. Thirty percent of the land has been taken up for the building, while the rest will be used for the car park and landscaping. Other features of the hotel include a 24-hour restaurant with an interactive kitchen and an ambiance of a recreated European street, an old-world themed bar, with beer barrels, old prints and a 1945 Norton motorcycle suspended from the ceiling and a southern specialty restaurant recreated in Chettinad style with original wooden pillars and paintings from this region."
+    </string>
 </resources>

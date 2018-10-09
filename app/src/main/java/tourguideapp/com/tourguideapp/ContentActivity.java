@@ -8,8 +8,8 @@ import android.widget.TextView;
 
 public class ContentActivity extends AppCompatActivity {
 
-    String mTitle, mLocation, mTimings, mAbout;
-    int mImageID;
+    String mTitle, mLocation, mTimings;
+    int mImageID, mAbout;
     TextView mTitleTextView, mLocationTextView, mTimingsTextView, mAboutTextView;
     ImageView imageView;
 
@@ -18,16 +18,16 @@ public class ContentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_content);
 
-        mTitleTextView = (TextView) findViewById(R.id.title_textView);
-        mLocationTextView = (TextView) findViewById(R.id.location_textView);
-        mTimingsTextView = (TextView) findViewById(R.id.timings_textView);
-        mAboutTextView = (TextView) findViewById(R.id.about_textView);
-        imageView = (ImageView) findViewById(R.id.imageView);
+        mTitleTextView = findViewById(R.id.title_textView);
+        mLocationTextView = findViewById(R.id.location_textView);
+        mTimingsTextView = findViewById(R.id.timings_textView);
+        mAboutTextView = findViewById(R.id.about_textView);
+        imageView = findViewById(R.id.imageView);
 
         mTitle = getIntent().getStringExtra("mTitle");
         mLocation = getIntent().getStringExtra("mLocation");
         mTimings = getIntent().getStringExtra("mTimings");
-        mAbout = getIntent().getStringExtra("mAbout");
+        mAbout = getIntent().getIntExtra("mAbout", mAbout);
 
         int id = getIntent().getIntExtra("mImage", mImageID);
         imageView.setImageResource(id);

@@ -5,17 +5,17 @@ public class Content {
     private String mTitle;
     private String mLocation;
     private String mTimings;
-    private String mAbout;
+    private int mAbout;
     private int mImageResourceId;
 
-    public Content(String mTitle, String mLocation, String mTimings, String mAbout) {
+    public Content(String mTitle, String mLocation, String mTimings, int mAbout) {
         this.mTitle = mTitle;
         this.mLocation = mLocation;
         this.mTimings = mTimings;
         this.mAbout = mAbout;
     }
 
-    public Content(int mImageResourceId, String mTitle, String mLocation, String mTimings, String mAbout) {
+    public Content(int mImageResourceId, String mTitle, String mLocation, String mTimings, int mAbout) {
         this.mTitle = mTitle;
         this.mLocation = mLocation;
         this.mTimings = mTimings;
@@ -40,7 +40,7 @@ public class Content {
         return mTimings;
     }
 
-    public String getmAbout() {
+    public int getmAbout() {
         return mAbout;
     }
 }

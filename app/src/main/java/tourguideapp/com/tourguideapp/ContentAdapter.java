@@ -16,6 +16,11 @@ import java.util.ArrayList;
 public class ContentAdapter extends ArrayAdapter<Content> {
 
 
+    public ContentAdapter(Context context, ArrayList<Content> words) {
+        super(context, 0, words);
+
+    }
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -26,24 +31,17 @@ public class ContentAdapter extends ArrayAdapter<Content> {
 
             Content currentContent = getItem(position);
 
-            TextView title_text = (TextView) cardItem.findViewById(R.id.title_text);
+            TextView title_text = cardItem.findViewById(R.id.title_text);
             title_text.setText(currentContent.getmTitle());
 
-            TextView location_text = (TextView) cardItem.findViewById(R.id.location_text);
+            TextView location_text = cardItem.findViewById(R.id.location_text);
             location_text.setText(currentContent.getmLocation());
 
-            ImageView image = (ImageView) cardItem.findViewById(R.id.imageView);
+            ImageView image = cardItem.findViewById(R.id.imageView);
             image.setImageResource(currentContent.getmImageResourceId());
             image.setScaleType(ImageView.ScaleType.CENTER_CROP);
         }
 
         return cardItem;
-    }
-
-
-
-    public ContentAdapter(Context context, ArrayList<Content> words) {
-        super(context, 0, words);
-
     }
 }
