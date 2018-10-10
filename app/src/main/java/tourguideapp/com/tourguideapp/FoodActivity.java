@@ -56,7 +56,6 @@ import java.util.ArrayList;
 public class FoodActivity extends AppCompatActivity {
 
     ListView mListView;
-    private ContentAdapter mContentAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,11 +65,11 @@ public class FoodActivity extends AppCompatActivity {
         mListView = findViewById(R.id.food_list);
 
         final ArrayList<Content> content = new ArrayList<Content>();
-        content.add(new Content(R.drawable.rayarmess,"Rayar Mess", "Mylapore, Chennai", "7AM to 10AM", R.string.rayarmess_text));
-        content.add(new Content(R.drawable.borderparrota, "Courtallam Border Rahmath Kadai", "T. Nagar, Chennai", "11AM to 7PM", R.string.borderparotta_text));
-        content.add(new Content(R.drawable.azizatho, "Burmeese Atho", "George Town", "4PM IST to 1AM IST", R.string.azizatho_text));
+        content.add(new Content(R.drawable.rayarmess,getString(R.string.rayarmess_title),getString(R.string.rayarmess_location) ,getString(R.string.rayarmess_timings) , R.string.rayarmess_text));
+        content.add(new Content(R.drawable.borderparrota, getString(R.string.rayarmess_title) ,getString(R.string.rayarmess_location) , getString(R.string.rayarmess_timings), R.string.borderparotta_text));
+        content.add(new Content(R.drawable.azizatho, getString(R.string.azizatho_title), getString(R.string.azizatho_location), getString(R.string.azizatho_timings), R.string.azizatho_text));
+        content.add(new Content(R.drawable.ponnusamy,getString(R.string.ponnusamy_title), getString(R.string.ponnusamy_location),getString(R.string.ponnysamy_timings) , R.string.ponnusamy_text));
 
-        content.add(new Content(R.drawable.ponnusamy,"Hotel Ponnusamy", "Royapettah", "12PM IST to 11PM IST", R.string.ponnusamy_text));
         ContentAdapter contentAdapter = new ContentAdapter(this, content);
         mListView.setAdapter(contentAdapter);
 

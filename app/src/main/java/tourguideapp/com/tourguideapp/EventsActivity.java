@@ -57,7 +57,6 @@ public class EventsActivity extends AppCompatActivity {
 
 
     ListView mListView;
-    private ContentAdapter mContentAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,13 +66,13 @@ public class EventsActivity extends AppCompatActivity {
         mListView = findViewById(R.id.events_list);
 
         final ArrayList<Content> content = new ArrayList<Content>();
-        content.add(new Content(R.drawable.bc, "Blood Chutney - by Karthik Kumar", "Royapettah", "Oct17th - 7PM IST ", R.string.bloodchutney_text));
+        content.add(new Content(R.drawable.bc, getString(R.string.bloodchutney_title), getString(R.string.bloodchutney_location), getString(R.string.bloodchutney_timings), R.string.bloodchutney_text));
 
-        content.add(new Content(R.drawable.orutimepakalam,"Evam Presents Jagan and Mervyn in OTP", "Alliance Francaise of Madras", "Dec1st - 7:30PM IST", R.string.orutimepakalam_text));
+        content.add(new Content(R.drawable.orutimepakalam,getString(R.string.orutimepakalam_title), getString(R.string.orutimepakalam_location), getString(R.string.orutimepakalam_timings), R.string.orutimepakalam_text));
 
-        content.add(new Content(R.drawable.seanroldan,"Sean Roldan Live", "Sir Mutha Venkatasubba Rao Concert Hall", "Oct27th - 6PM IST", R.string.seanroldanlive_text));
+        content.add(new Content(R.drawable.seanroldan,getString(R.string.seanroldanlive_title), getString(R.string.seanroldanlive_location), getString(R.string.seanroldanlive_timings), R.string.seanroldanlive_text));
 
-      content.add(new Content(R.drawable.agam, "Octavia - Agam", "Bishop Heber Hall", "Oct15th - 7PM", R.string.octiviaAgam_text));
+      content.add(new Content(R.drawable.agam, getString(R.string.octiviaAgam_title), getString(R.string.octiviaAgam_location), getString(R.string.octiviaAgam_timings), R.string.octiviaAgam_text));
 
         ContentAdapter contentAdapter = new ContentAdapter(this, content);
         mListView.setAdapter(contentAdapter);

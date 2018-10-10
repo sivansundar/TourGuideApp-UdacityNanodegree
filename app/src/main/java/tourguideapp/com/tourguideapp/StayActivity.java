@@ -56,7 +56,6 @@ import java.util.ArrayList;
 public class StayActivity extends AppCompatActivity {
 
     ListView mListView;
-    private ContentAdapter mContentAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,12 +66,10 @@ public class StayActivity extends AppCompatActivity {
 
         final ArrayList<Content> content = new ArrayList<Content>();
 
-        content.add(new Content(R.drawable.accord, "Hotel Accord", "T.Nagar", "12AM IST to 12PM IST", R.string.hotelaccord_text));
-        content.add(new Content(R.drawable.meredian, "Le Royal Méridien", "St.Thomas Mount", "12AM IST to 12PM IST", R.string.meredian_text));
-
-        content.add(new Content(R.drawable.raintree, "The Raintree Hotel", "Anna Salai", "12AM IST to 12PM IST", R.string.raintree_text));
-
-        content.add(new Content(R.drawable.residencytowers, "Residency Towers", "T.Nagar", "12AM to 12PM IST", R.string.residencytowers_text));
+        content.add(new Content(R.drawable.accord,  getString(R.string.hotelaccord_title), getString(R.string.hotelaccord_location), getString(R.string.ponnysamy_timings), R.string.hotelaccord_text));
+        content.add(new Content(R.drawable.meredian, getString(R.string.meredian_title) , getString(R.string.meredian_location), getString(R.string.meredian_timings) ,  R.string.meredian_text));
+        content.add(new Content(R.drawable.raintree, getString(R.string.raintree_title), getString(R.string.raintree_location) , getString(R.string.raintree_timings), R.string.raintree_text));
+        content.add(new Content(R.drawable.residencytowers, getString(R.string.residencytowers_title), getString(R.string.residencytowers_location) , getString(R.string.residencytowers_timings), R.string.residencytowers_text));
         final ContentAdapter contentAdapter = new ContentAdapter(this, content);
         mListView.setAdapter(contentAdapter);
 

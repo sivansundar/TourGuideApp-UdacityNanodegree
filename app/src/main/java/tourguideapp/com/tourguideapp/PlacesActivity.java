@@ -61,7 +61,6 @@ import java.util.ArrayList;
 public class PlacesActivity extends AppCompatActivity {
 
     ListView mListView;
-    private ContentAdapter mContentAdapter;
 
 
     @Override
@@ -73,11 +72,11 @@ public class PlacesActivity extends AppCompatActivity {
 
 
         final ArrayList<Content> content = new ArrayList<Content>();
-        content.add(new Content(R.drawable.marina, "Marina Beach", "Near Fort St.George", "5AM to 12PM", R.string.marina_text));
+        content.add(new Content(R.drawable.marina, getString(R.string.marina_title), getString(R.string.marina_location), getString(R.string.marina_timings), R.string.marina_text));
 
-        content.add(new Content(R.drawable.valluvarkottam, "Valluvar Kottam", "Valluvar Kottam", "5AM to 12PM", R.string.valluvarkottam_text));
-        content.add(new Content(R.drawable.kapaleeshwarar, "Kapaleeshwarar Temple", "Mylapore", "6AM to 8PM", R.string.kapaleeshwarar_text));
-        content.add(new Content(R.drawable.govtmuseum, "Government Museum", "Egmore", "9:30AM to 5PM", R.string.govtmuseum_text));
+        content.add(new Content(R.drawable.valluvarkottam, getString(R.string.valluvarkottam_title), getString(R.string.vallumarkottam_location), getString(R.string.valluvarkottam_timings), R.string.valluvarkottam_text));
+        content.add(new Content(R.drawable.kapaleeshwarar, getString(R.string.kapaleeshwarar_title), getString(R.string.kapaleeshwarar_location), getString(R.string.kapaleeshwarar_timings), R.string.kapaleeshwarar_text));
+        content.add(new Content(R.drawable.govtmuseum, getString(R.string.govtmuseum_title), getString(R.string.govtmuseum_location), getString(R.string.govtmuseum_timings), R.string.govtmuseum_text));
 
         ContentAdapter contentAdapter = new ContentAdapter(this, content);
         mListView.setAdapter(contentAdapter);
